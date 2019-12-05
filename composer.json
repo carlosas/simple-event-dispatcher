@@ -1,0 +1,28 @@
+{
+  "name": "carlosas/simple-event-dispatcher",
+  "type": "library",
+  "description": "Simple PSR-14 Event Dispatcher",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Carlos Alandete Sastre",
+      "email": "carlos.alandete@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.2",
+    "psr/container": "^1.0",
+    "psr/event-dispatcher": "^1.0"
+  },
+  "provide": {
+    "psr/event-dispatcher-implementation": "1.0"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "autoload": {
+    "psr-4": {
+      "PHPAT\\EventDispatcher\\": "src/"
+    }
+  }
+}
